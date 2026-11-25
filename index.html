@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Selamat Hari Guru Nasional • 25 November</title>
+
+  <!-- Meta Tags Open Graph agar pratinjau link di WhatsApp & Media Sosial tampil elegan -->
+  <meta name="description" content="Persembahan tulus bagi lentera kehidupan — Ucapan Selamat Hari Guru Nasional 25 November untuk Ibu & Bapak Guru Tercinta." />
+  <meta name="theme-color" content="#1B3B36" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Selamat Hari Guru Nasional • 25 November" />
+  <meta property="og:description" content="Persembahan tulus bagi lentera kehidupan, yang menuntun langkah kami dengan kesabaran dan kasih tanpa batas." />
+  <meta property="og:locale" content="id_ID" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Selamat Hari Guru Nasional • 25 November" />
+  <meta name="twitter:description" content="Ucapan Selamat Hari Guru Nasional untuk Ibu & Bapak Guru Tercinta. Pahlawan Tanpa Tanda Jasa." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Playfair Display, Great Vibes, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind Configuration for Custom Colors & Fonts -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivory: '#FAF7F2',
+            ivoryDark: '#F2ECE1',
+            emeraldDeep: '#1B3B36',
+            emeraldMid: '#244C46',
+            goldSoft: '#C8A96A',
+            goldLight: '#E5CE9A',
+            charcoalWarm: '#3A3A3A',
+            charcoalSoft: '#63605B',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            script: ['"Great Vibes"', 'cursive'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    /* Base styling and smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #1f443e 0%, #112623 55%, #091513 100%);
+      color: #3A3A3A;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Mobile Invitation Frame on Desktop */
+    .mobile-shell {
+      width: 100%;
+      max-width: 430px;
+      min-height: 100dvh;
+      margin: 0 auto;
+      background-color: #FAF7F2;
+      position: relative;
+      overflow-x: hidden;
+      box-shadow: 0 25px 60px -12px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(200, 169, 106, 0.25);
+    }
+
+    /* Subtle paper grain overlay */
+    .paper-texture {
+      background-image: radial-gradient(rgba(200, 169, 106, 0.08) 1px, transparent 0);
+      background-size: 22px 22px;
+    }
+
+    /* Cover screen transition */
+    #cover-screen {
+      transition: transform 0.95s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.85s ease;
+    }
+
+    #cover-screen.opened {
+      transform: translateY(-100%);
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    /* Scroll reveal animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.85s ease-out, transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Gentle floating & glow animations */
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-7px); }
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { filter: drop-shadow(0 0 8px rgba(200, 169, 106, 0.45)); }
+      50% { filter: drop-shadow(0 0 18px rgba(229, 206, 154, 0.85)); }
+    }
+
+    @keyframes spinSlow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes shimmerText {
+      0% { background-position: -200% center; }
+      100% { background-position: 200% center; }
+    }
+
+    .animate-float {
+      animation: floatSlow 4.2s ease-in-out infinite;
+    }
+
+    .animate-lantern {
+      animation: pulseGlow 3.2s ease-in-out infinite;
+    }
+
+    .animate-spin-disc {
+      animation: spinSlow 7s linear infinite;
+    }
+
+    .paused-disc {
+      animation-play-state: paused;
+    }
+
+    .gold-shimmer {
+      background: linear-gradient(90deg, #C8A96A 0%, #F3DFB2 45%, #C8A96A 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shimmerText 5s linear infinite;
+    }
+
+    /* Custom subtle scrollbar inside wish list */
+    .custom-scroll::-webkit-scrollbar {
+      width: 4px;
+    }
+    .custom-scroll::-webkit-scrollbar-track {
+      background: rgba(200, 169, 106, 0.1);
+      border-radius: 99px;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: rgba(200, 169, 106, 0.55);
+      border-radius: 99px;
+    }
+
+    /* Toast notification transition */
+    #toast-box {
+      transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.35s ease;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-goldSoft/30 selection:text-emeraldDeep">
+
+  <!-- Main Mobile-First Container -->
+  <div id="app-shell" class="mobile-shell paper-texture">
+
+    <!-- Floating Golden Dust / Petals Canvas Overlay -->
+    <canvas id="particles-canvas" class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-[430px] h-full pointer-events-none z-30"></canvas>
+
+    <!-- ========================================================= -->
+    <!-- HTML5 AUDIO ELEMENT (TARUH hymne-guru.mp3 DI FOLDER SAMA) -->
+    <!-- ========================================================= -->
+    <audio id="bgMusic" src="hymne-guru.mp3" loop preload="auto"></audio>
+
+    <!-- ========================================================= -->
+    <!-- LAYAR SAMPUL PEMBUKA (COVER SCREEN)                       -->
+    <!-- ========================================================= -->
+    <section id="cover-screen" class="fixed inset-0 left-1/2 -translate-x-1/2 w-full max-w-[430px] z-50 flex flex-col items-center justify-between px-7 py-10 text-center bg-gradient-to-b from-[#16312D] via-[#1B3B36] to-[#102421] text-ivory overflow-hidden">
+      <!-- Ornamental Golden Corners -->
+      <div class="pointer-events-none absolute inset-4 border border-goldSoft/35 rounded-[28px]"></div>
+      <div class="pointer-events-none absolute inset-6 border border-goldSoft/15 rounded-[22px]"></div>
+
+      <!-- Subtle radial glow -->
+      <div class="pointer-events-none absolute -top-20 left-1/2 -translate-x-1/2 w-72 h-72 rounded-full bg-goldSoft/15 blur-3xl"></div>
+
+      <!-- Top Date Badge -->
+      <div class="relative z-10 mt-2">
+        <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-goldSoft/40 bg-white/5 text-[10px] uppercase tracking-[0.26em] text-goldLight font-medium">
+          <span class="w-1.5 h-1.5 rounded-full bg-goldLight"></span>
+          25 November • Hari Guru Nasional
+        </span>
+      </div>
+
+      <!-- Center Emblem & Title -->
+      <div class="relative z-10 flex flex-col items-center my-auto py-6">
+        <!-- Glowing Golden Lantern Icon -->
+        <div class="animate-float mb-6">
+          <svg class="w-20 h-20 animate-lantern" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="40" r="36" stroke="#C8A96A" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="3 4"/>
+            <path d="M40 12V18" stroke="#E5CE9A" stroke-width="2" stroke-linecap="round"/>
+            <path d="M32 18H48L51 24H29L32 18Z" fill="#C8A96A"/>
+            <rect x="27" y="24" width="26" height="30" rx="6" fill="#244C46" stroke="#E5CE9A" stroke-width="1.8"/>
+            <path d="M40 31C40 31 34 37.5 34 42C34 45.3 36.7 48 40 48C43.3 48 46 45.3 46 42C46 37.5 40 31 40 31Z" fill="#F5D996"/>
+            <path d="M40 36.5C40 36.5 37.5 39.8 37.5 42C37.5 43.4 38.6 44.5 40 44.5C41.4 44.5 42.5 43.4 42.5 42C42.5 39.8 40 36.5 40 36.5Z" fill="#FFF9E6"/>
+            <path d="M29 54H51L48 60H32L29 54Z" fill="#C8A96A"/>
+            <path d="M35 64H45" stroke="#E5CE9A" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </div>
+
+        <p class="font-script text-3xl text-goldLight mb-1">Persembahan Tulus Untuk</p>
+        <h1 class="font-serif text-[32px] leading-[1.18] font-bold text-ivory tracking-tight">
+          Selamat Hari Guru<br/>Nasional
+        </h1>
+        <div class="w-16 h-[1.5px] bg-gradient-to-r from-transparent via-goldSoft to-transparent my-4"></div>
+        <p class="text-xs leading-relaxed text-ivory/80 max-w-[280px] font-light">
+          Kepada Ibu &amp; Bapak Guru tercinta, pelita ilmu yang menerangi langkah kami dengan kesabaran dan kasih tanpa batas.
+        </p>
+      </div>
+
+      <!-- Open Invitation CTA -->
+      <div class="relative z-10 w-full flex flex-col items-center gap-3 mb-2">
+        <button id="open-invitation-btn" type="button"
+          class="group relative inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-gradient-to-r from-goldSoft via-goldLight to-goldSoft text-emeraldDeep font-semibold text-sm tracking-wide shadow-[0_10px_30px_rgba(200,169,106,0.35)] hover:brightness-105 active:scale-95 transition cursor-pointer">
+          <svg class="w-4 h-4 transition-transform group-hover:scale-110" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          <span>Buka Ucapan</span>
+        </button>
+        <p class="text-[10px] text-goldLight/75 tracking-wider uppercase">
+          Diiringi Alunan Piano Hymne Guru
+        </p>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- KONTEN UTAMA UNDANGAN DIGITAL                             -->
+    <!-- ========================================================= -->
+    <main id="main-content" class="relative z-10 pb-10">
+
+      <!-- HERO HEADER -->
+      <header class="relative bg-gradient-to-b from-emeraldDeep via-emeraldMid to-emeraldDeep text-ivory pt-12 pb-16 px-6 text-center rounded-b-[38px] shadow-xl overflow-hidden">
+        <div class="pointer-events-none absolute -top-16 -right-16 w-48 h-48 rounded-full bg-goldSoft/15 blur-2xl"></div>
+        <div class="pointer-events-none absolute -bottom-14 -left-14 w-48 h-48 rounded-full bg-goldSoft/10 blur-2xl"></div>
+
+        <p class="text-[10px] uppercase tracking-[0.28em] text-goldLight/90 font-medium mb-2">
+          25 November • Pahlawan Tanpa Tanda Jasa
+        </p>
+        <h2 class="font-script text-4xl text-goldLight leading-none mb-1">Terima Kasih Guruku</h2>
+        <h1 class="font-serif text-2xl font-bold tracking-tight text-ivory">
+          Selamat Hari Guru Nasional
+        </h1>
+        <p class="text-xs text-ivory/80 mt-3 max-w-[300px] mx-auto leading-relaxed font-light">
+          Engkau adalah lentera di tengah gelap, dan embun penyejuk di saat dahaga akan ilmu pengetahuan.
+        </p>
+      </header>
+
+      <!-- ========================================================= -->
+      <!-- ILUSTRASI GURU BATIK KORPRI & SISWA SD, SMP, SMA          -->
+      <!-- ========================================================= -->
+      <section class="px-5 -mt-10 relative z-20 reveal">
+        <div class="rounded-[26px] bg-white p-3.5 border border-goldSoft/40 shadow-[0_14px_35px_rgba(27,59,54,0.12)]">
+          <div class="rounded-[20px] overflow-hidden bg-gradient-to-b from-[#FFF8EC] to-[#F3E9D7] border border-goldSoft/25">
+            <svg viewBox="0 0 400 265" class="w-full h-auto block" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustrasi Pak Guru dan Ibu Guru berseragam Batik KORPRI bersama siswa SD, SMP, dan SMA Indonesia">
+              <defs>
+                <!-- Latar dinding kelas hangat -->
+                <linearGradient id="wallGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#FFF9EE"/>
+                  <stop offset="100%" stop-color="#F2E6D0"/>
+                </linearGradient>
+                <!-- Motif Batik KORPRI Biru -->
+                <pattern id="korpriPattern" width="10" height="10" patternUnits="userSpaceOnUse">
+                  <rect width="10" height="10" fill="#1E4D8C"/>
+                  <path d="M5 1 L8 5 L5 9 L2 5 Z" fill="#3B7DD8" opacity="0.7"/>
+                  <circle cx="5" cy="5" r="1.2" fill="#9AC5FF" opacity="0.85"/>
+                  <circle cx="0" cy="0" r="1" fill="#143360"/>
+                  <circle cx="10" cy="10" r="1" fill="#143360"/>
+                </pattern>
+                <!-- Cahaya pagi jendela -->
+                <linearGradient id="sunRay" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#FFE49E" stop-opacity="0.45"/>
+                  <stop offset="100%" stop-color="#FFE49E" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+
+              <!-- Dinding & Lantai Kelas -->
+              <rect width="400" height="265" fill="url(#wallGrad)"/>
+              <rect x="0" y="218" width="400" height="47" fill="#E3D2B7"/>
+              <line x1="0" y1="218" x2="400" y2="218" stroke="#C8A96A" stroke-width="1.5"/>
+
+              <!-- Cahaya Matahari Pagi -->
+              <polygon points="0,0 135,0 245,265 0,265" fill="url(#sunRay)"/>
+
+              <!-- Papan Tulis Hijau Sekolah Indonesia -->
+              <rect x="78" y="24" width="244" height="108" rx="6" fill="#234B3E" stroke="#8C5E3C" stroke-width="5"/>
+              <rect x="85" y="31" width="230" height="94" rx="2" fill="none" stroke="#366B5A" stroke-width="1" stroke-dasharray="4 3"/>
+              <!-- Tulisan Kapur di Papan Tulis -->
+              <text x="200" y="64" text-anchor="middle" fill="#FAF7F2" font-family="Georgia, serif" font-size="14" font-weight="bold" opacity="0.95">Selamat Hari Guru</text>
+              <text x="200" y="83" text-anchor="middle" fill="#E5CE9A" font-family="Georgia, serif" font-size="11" font-style="italic" opacity="0.9">Nasional • 25 November</text>
+              <line x1="140" y1="94" x2="260" y2="94" stroke="#E5CE9A" stroke-width="1" opacity="0.6"/>
+              <text x="200" y="109" text-anchor="middle" fill="#D5E8DF" font-family="sans-serif" font-size="8" letter-spacing="1.2">PAHLAWAN TANPA TANDA JASA</text>
+
+              <!-- Bendera Merah Putih di Sudut Kanan -->
+              <rect x="362" y="30" width="3.5" height="188" fill="#8C6B3F"/>
+              <circle cx="363.75" cy="28" r="4" fill="#C8A96A"/>
+              <path d="M365.5 34 Q379 39 392 34 L392 50 Q379 55 365.5 50 Z" fill="#D62828"/>
+              <path d="M365.5 50 Q379 55 392 50 L392 66 Q379 71 365.5 66 Z" fill="#FFFFFF" stroke="#E2D9C8" stroke-width="0.6"/>
+              <ellipse cx="363.75" cy="218" rx="14" ry="4" fill="#6E522E"/>
+
+              <!-- Lambang Garuda Kecil di Atas Papan Tulis -->
+              <circle cx="200" cy="13" r="7" fill="#C8A96A"/>
+              <circle cx="200" cy="13" r="4.5" fill="#9E772E"/>
+
+              <!-- =================================================== -->
+              <!-- 1. PAK GURU (KIRI) — BATIK KORPRI + PECI + KACAMATA -->
+              <!-- =================================================== -->
+              <g id="pak-guru">
+                <!-- Celana Hitam -->
+                <rect x="103" y="180" width="38" height="46" rx="4" fill="#23272E"/>
+                <line x1="122" y1="194" x2="122" y2="226" stroke="#15181D" stroke-width="1.5"/>
+                <!-- Kemeja Batik KORPRI -->
+                <path d="M97 132 Q97 119 112 118 L132 118 Q147 119 147 132 L149 184 L95 184 Z" fill="url(#korpriPattern)"/>
+                <!-- Kerah Kemeja -->
+                <polygon points="113,118 122,128 131,118" fill="#143360"/>
+                <!-- Lencana KORPRI Emas di Dada Kiri -->
+                <circle cx="133" cy="138" r="3" fill="#E5CE9A" stroke="#9A7632" stroke-width="0.8"/>
+                <!-- Lengan Kanan & Kiri -->
+                <path d="M97 134 L88 164 L98 168 L104 145" fill="url(#korpriPattern)"/>
+                <circle cx="93" cy="167" r="4.5" fill="#E6B89C"/>
+                <path d="M147 134 L156 160 L146 164 L141 144" fill="url(#korpriPattern)"/>
+                <circle cx="151" cy="163" r="4.5" fill="#E6B89C"/>
+                <!-- Leher & Kepala -->
+                <rect x="116" y="109" width="12" height="11" rx="4" fill="#DDA98A"/>
+                <circle cx="122" cy="96" r="16" fill="#E6B89C"/>
+                <!-- Peci Hitam Nasional -->
+                <path d="M107 88 C107 78 137 78 137 88 L136 93 C128 90 116 90 108 93 Z" fill="#1B1E24"/>
+                <!-- Kacamata -->
+                <rect x="112" y="94" width="8.5" height="6" rx="2" fill="none" stroke="#2D3138" stroke-width="1.4"/>
+                <rect x="123.5" y="94" width="8.5" height="6" rx="2" fill="none" stroke="#2D3138" stroke-width="1.4"/>
+                <line x1="120.5" y1="97" x2="123.5" y2="97" stroke="#2D3138" stroke-width="1.4"/>
+                <!-- Mata & Senyum Ramah -->
+                <circle cx="116.2" cy="97" r="1.2" fill="#23272E"/>
+                <circle cx="127.7" cy="97" r="1.2" fill="#23272E"/>
+                <path d="M117 104 Q122 108 127 104" fill="none" stroke="#7A4933" stroke-width="1.4" stroke-linecap="round"/>
+              </g>
+
+              <!-- =================================================== -->
+              <!-- 2. IBU GURU (KANAN) — BATIK KORPRI + HIJAB NAVY     -->
+              <!-- =================================================== -->
+              <g id="ibu-guru">
+                <!-- Rok Panjang Biru Dongker -->
+                <path d="M256 178 L296 178 L302 226 L250 226 Z" fill="#162944"/>
+                <!-- Baju Batik KORPRI -->
+                <path d="M254 134 Q254 121 268 120 L284 120 Q298 121 298 134 L300 182 L252 182 Z" fill="url(#korpriPattern)"/>
+                <!-- Lencana KORPRI Emas -->
+                <circle cx="286" cy="142" r="3" fill="#E5CE9A" stroke="#9A7632" stroke-width="0.8"/>
+                <!-- Lengan -->
+                <path d="M254 136 L244 162 L254 166 L261 146" fill="url(#korpriPattern)"/>
+                <circle cx="248" cy="165" r="4.2" fill="#F0C6AC"/>
+                <path d="M298 136 L306 164 L297 167 L291 146" fill="url(#korpriPattern)"/>
+                <circle cx="301" cy="166" r="4.2" fill="#F0C6AC"/>
+                <!-- Hijab Biru Dongker Elegan -->
+                <path d="M258 98 C258 80 294 80 294 98 L297 128 Q276 138 255 128 Z" fill="#183052"/>
+                <!-- Wajah Ibu Guru -->
+                <ellipse cx="276" cy="100" rx="13" ry="14" fill="#F0C6AC"/>
+                <!-- Mata & Senyum Lembut -->
+                <circle cx="271.5" cy="99" r="1.3" fill="#23272E"/>
+                <circle cx="280.5" cy="99" r="1.3" fill="#23272E"/>
+                <circle cx="268.5" cy="103" r="2" fill="#F29E9E" opacity="0.45"/>
+                <circle cx="283.5" cy="103" r="2" fill="#F29E9E" opacity="0.45"/>
+                <path d="M271.5 106 Q276 110 280.5 106" fill="none" stroke="#8C4E38" stroke-width="1.4" stroke-linecap="round"/>
+              </g>
+
+              <!-- =================================================== -->
+              <!-- 3. SISWA SMA (TENGAH-KIRI) — PUTIH ABU-ABU          -->
+              <!-- =================================================== -->
+              <g id="siswa-sma">
+                <!-- Celana Abu-abu SMA -->
+                <rect x="157" y="190" width="28" height="44" rx="3" fill="#7D8794"/>
+                <line x1="171" y1="202" x2="171" y2="234" stroke="#5E6773" stroke-width="1.3"/>
+                <!-- Kemeja Putih SMA -->
+                <path d="M153 148 Q153 138 164 137 L178 137 Q189 138 189 148 L190 192 L152 192 Z" fill="#FFFFFF" stroke="#DCE2EA" stroke-width="1"/>
+                <!-- Dasi Abu-abu SMA -->
+                <polygon points="169,138 173,138 175,164 171,168 167,164" fill="#64707D"/>
+                <!-- Kepala & Rambut -->
+                <circle cx="171" cy="122" r="13.5" fill="#E8BA9E"/>
+                <path d="M157 120 C157 106 185 106 185 120 C182 114 162 114 157 120 Z" fill="#1F2329"/>
+                <circle cx="166.5" cy="122" r="1.2" fill="#23272E"/>
+                <circle cx="175.5" cy="122" r="1.2" fill="#23272E"/>
+                <path d="M167 128 Q171 131 175 128" fill="none" stroke="#7A4933" stroke-width="1.3" stroke-linecap="round"/>
+              </g>
+
+              <!-- =================================================== -->
+              <!-- 4. SISWI SMP (TENGAH-KANAN) — PUTIH BIRU DONGKER    -->
+              <!-- =================================================== -->
+              <g id="siswi-smp">
+                <!-- Rok Biru Dongker SMP -->
+                <path d="M214 192 L244 192 L249 234 L209 234 Z" fill="#1F3A68"/>
+                <!-- Baju Putih SMP -->
+                <path d="M212 152 Q212 143 222 142 L236 142 Q246 143 246 152 L247 194 L211 194 Z" fill="#FFFFFF" stroke="#DCE2EA" stroke-width="1"/>
+                <!-- Dasi Biru SMP -->
+                <polygon points="227,143 231,143 233,166 229,170 225,166" fill="#1F3A68"/>
+                <!-- Hijab Putih Siswi -->
+                <path d="M215 128 C215 112 243 112 243 128 L245 151 Q229 158 213 151 Z" fill="#FFFFFF" stroke="#D9E0E8" stroke-width="1"/>
+                <!-- Wajah Siswi SMP -->
+                <ellipse cx="229" cy="130" rx="10.5" ry="11.5" fill="#F2C8AF"/>
+                <circle cx="225.5" cy="129.5" r="1.1" fill="#23272E"/>
+                <circle cx="232.5" cy="129.5" r="1.1" fill="#23272E"/>
+                <path d="M225.5 135 Q229 138 232.5 135" fill="none" stroke="#8C4E38" stroke-width="1.2" stroke-linecap="round"/>
+                <!-- Buku Pelajaran di Tangan -->
+                <rect x="218" y="172" width="22" height="14" rx="2" fill="#C8A96A" stroke="#8C6B3F" stroke-width="1"/>
+                <line x1="229" y1="172" x2="229" y2="186" stroke="#FAF7F2" stroke-width="1"/>
+              </g>
+
+              <!-- =================================================== -->
+              <!-- 5. SISWA SD (TENGAH DEPAN) — PUTIH MERAH + MAWAR    -->
+              <!-- =================================================== -->
+              <g id="siswa-sd">
+                <!-- Celana Merah SD -->
+                <rect x="186" y="206" width="28" height="30" rx="3" fill="#B82626"/>
+                <line x1="200" y1="216" x2="200" y2="236" stroke="#8E1A1A" stroke-width="1.2"/>
+                <!-- Kaki -->
+                <rect x="191" y="236" width="6" height="10" fill="#EBBF9F"/>
+                <rect x="203" y="236" width="6" height="10" fill="#EBBF9F"/>
+                <!-- Kemeja Putih SD -->
+                <path d="M183 172 Q183 163 193 162 L207 162 Q217 163 217 172 L218 208 L182 208 Z" fill="#FFFFFF" stroke="#DCE2EA" stroke-width="1"/>
+                <!-- Dasi Merah SD -->
+                <polygon points="198,163 202,163 203.5,183 200,187 196.5,183" fill="#B82626"/>
+                <!-- Kepala & Rambut Siswa SD -->
+                <circle cx="200" cy="148" r="12.5" fill="#EBBF9F"/>
+                <path d="M187.5 146 C187.5 133 212.5 133 212.5 146 C209 140 191 140 187.5 146 Z" fill="#23272E"/>
+                <circle cx="196" cy="148" r="1.15" fill="#23272E"/>
+                <circle cx="204" cy="148" r="1.15" fill="#23272E"/>
+                <path d="M196 153.5 Q200 156.5 204 153.5" fill="none" stroke="#7A4933" stroke-width="1.2" stroke-linecap="round"/>
+                <!-- Setangkai Bunga Mawar untuk Guru -->
+                <line x1="200" y1="196" x2="213" y2="180" stroke="#2D7A4F" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="214" cy="178" r="4.5" fill="#D93848"/>
+                <circle cx="214" cy="178" r="2" fill="#FF7B89"/>
+              </g>
+
+              <!-- Bayangan Halus di Lantai -->
+              <ellipse cx="200" cy="248" rx="125" ry="7" fill="#1B3B36" opacity="0.1"/>
+            </svg>
+          </div>
+          <p class="text-[11px] text-center text-charcoalSoft mt-2.5 italic font-serif">
+            “Ing Ngarsa Sung Tuladha, Ing Madya Mangun Karsa, Tut Wuri Handayani”
+          </p>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- KARTU SURAT UCAPAN MENYENTUH HATI                         -->
+      <!-- ========================================================= -->
+      <section class="px-5 mt-8 reveal">
+        <div class="relative rounded-[26px] bg-white px-6 py-7 border border-goldSoft/35 shadow-[0_8px_28px_rgba(27,59,54,0.06)]">
+          <div class="flex items-center justify-center gap-2 mb-4">
+            <span class="h-[1px] w-8 bg-goldSoft/60"></span>
+            <span class="text-[10px] uppercase tracking-[0.25em] text-goldSoft font-semibold">Sepucuk Surat Rindu</span>
+            <span class="h-[1px] w-8 bg-goldSoft/60"></span>
+          </div>
+
+          <h3 class="font-serif text-xl font-semibold text-emeraldDeep text-center mb-4">
+            Untuk Ibu &amp; Bapak Guru Tercinta
+          </h3>
+
+          <div class="space-y-3.5 text-[13px] leading-[1.8] text-charcoalWarm text-justify font-normal">
+            <p>
+              Di balik setiap langkah kecil kami menuju masa depan, ada doa-doa lirih yang senantiasa Engkau langitkan, ada kesabaran tanpa batas yang tak pernah lelah membimbing kami saat terjatuh.
+            </p>
+            <p>
+              Engkau bukan sekadar pengajar aksara dan angka, melainkan penjaga lentera nurani. Dari ketulusan hatimu, kami belajar arti kejujuran, kerja keras, dan keberanian untuk bermimpi besar.
+            </p>
+            <p>
+              Di Hari Guru Nasional ini, izinkan kami menundukkan kepala penuh hormat. Semoga kesehatan, kebahagiaan, dan keberkahan yang melimpah senantiasa menyertai setiap langkah pengabdianmu.
+            </p>
+          </div>
+
+          <!-- Kutipan Hymne Guru -->
+          <div class="mt-6 p-4 rounded-2xl bg-emeraldDeep text-center border border-goldSoft/40">
+            <p class="font-serif italic text-[13px] leading-relaxed gold-shimmer font-medium">
+              “Terpujilah wahai engkau Ibu Bapak Guru,<br/>
+              Namamu akan selalu hidup dalam sanubariku.<br/>
+              Semua baktimu akan kuukir di dalam hatiku...”
+            </p>
+            <p class="text-[10px] tracking-[0.2em] uppercase text-goldLight/75 mt-2">
+              — Hymne Guru (Cipt. Sartono)
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- 3 KARTU DEDIKASI GURU                                     -->
+      <!-- ========================================================= -->
+      <section class="px-5 mt-7 reveal">
+        <div class="grid grid-cols-3 gap-2.5">
+          <div class="p-3.5 rounded-2xl bg-white border border-goldSoft/30 text-center shadow-sm">
+            <div class="w-9 h-9 mx-auto mb-2 rounded-full bg-emeraldDeep/10 text-emeraldDeep flex items-center justify-center">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+              </svg>
+            </div>
+            <h4 class="font-serif text-xs font-semibold text-emeraldDeep">Pelita Ilmu</h4>
+            <p class="text-[10px] text-charcoalSoft mt-1 leading-snug">Menerangi jalan masa depan</p>
+          </div>
+
+          <div class="p-3.5 rounded-2xl bg-white border border-goldSoft/30 text-center shadow-sm">
+            <div class="w-9 h-9 mx-auto mb-2 rounded-full bg-emeraldDeep/10 text-emeraldDeep flex items-center justify-center">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+            <h4 class="font-serif text-xs font-semibold text-emeraldDeep">Ketulusan</h4>
+            <p class="text-[10px] text-charcoalSoft mt-1 leading-snug">Mengabdi dengan sepenuh hati</p>
+          </div>
+
+          <div class="p-3.5 rounded-2xl bg-white border border-goldSoft/30 text-center shadow-sm">
+            <div class="w-9 h-9 mx-auto mb-2 rounded-full bg-emeraldDeep/10 text-emeraldDeep flex items-center justify-center">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+              </svg>
+            </div>
+            <h4 class="font-serif text-xs font-semibold text-emeraldDeep">Inspirasi</h4>
+            <p class="text-[10px] text-charcoalSoft mt-1 leading-snug">Mencetak generasi hebat</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- KIRIM DOA & UCAPAN REAL-TIME                              -->
+      <!-- ========================================================= -->
+      <section class="px-5 mt-8 reveal">
+        <div class="rounded-[26px] bg-white p-6 border border-goldSoft/35 shadow-[0_8px_28px_rgba(27,59,54,0.06)]">
+          <div class="text-center mb-5">
+            <span class="text-[10px] uppercase tracking-[0.24em] text-goldSoft font-semibold">Buku Doa &amp; Apresiasi</span>
+            <h3 class="font-serif text-xl font-semibold text-emeraldDeep mt-1">Kirim Doa untuk Gurumu</h3>
+            <p class="text-xs text-charcoalSoft mt-1">
+              Tuliskan ucapan tulus untuk guru favoritmu agar dapat dibaca bersama.
+            </p>
+          </div>
+
+          <form id="wish-form" class="space-y-3.5">
+            <div>
+              <label for="sender-name" class="block text-[11px] font-medium text-emeraldDeep mb-1">Nama Pengirim</label>
+              <input id="sender-name" type="text" required maxlength="60" placeholder="Contoh: Aisyah / Alumni 2024"
+                class="w-full px-3.5 py-2.5 rounded-xl bg-ivory border border-goldSoft/40 text-xs text-charcoalWarm placeholder:text-charcoalSoft/55 focus:outline-none focus:border-emeraldDeep focus:ring-2 focus:ring-emeraldDeep/15 transition" />
+            </div>
+
+            <div>
+              <label for="teacher-name" class="block text-[11px] font-medium text-emeraldDeep mb-1">Ditujukan Kepada</label>
+              <input id="teacher-name" type="text" required maxlength="60" placeholder="Contoh: Ibu Siti / Seluruh Bapak & Ibu Guru"
+                class="w-full px-3.5 py-2.5 rounded-xl bg-ivory border border-goldSoft/40 text-xs text-charcoalWarm placeholder:text-charcoalSoft/55 focus:outline-none focus:border-emeraldDeep focus:ring-2 focus:ring-emeraldDeep/15 transition" />
+            </div>
+
+            <div>
+              <label for="wish-message" class="block text-[11px] font-medium text-emeraldDeep mb-1">Untaian Doa &amp; Ucapan</label>
+              <textarea id="wish-message" rows="3" required maxlength="320" placeholder="Tuliskan doa dan ucapan terima kasih terbaik Anda..."
+                class="w-full px-3.5 py-2.5 rounded-xl bg-ivory border border-goldSoft/40 text-xs text-charcoalWarm placeholder:text-charcoalSoft/55 focus:outline-none focus:border-emeraldDeep focus:ring-2 focus:ring-emeraldDeep/15 transition resize-none"></textarea>
+            </div>
+
+            <button type="submit"
+              class="w-full py-3 rounded-xl bg-emeraldDeep text-goldLight font-semibold text-xs tracking-wide shadow-md hover:bg-emeraldMid active:scale-[0.99] transition cursor-pointer flex items-center justify-center gap-2">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"/>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+              <span>Kirim Doa &amp; Ucapan</span>
+            </button>
+          </form>
+
+          <!-- Daftar Untaian Doa Terkirim -->
+          <div class="mt-6 pt-5 border-t border-goldSoft/25">
+            <div class="flex items-center justify-between mb-3.5">
+              <div class="flex items-center gap-2">
+                <span id="cloud-status-dot" title="Menghubungkan ke server..." class="w-2 h-2 rounded-full bg-amber-400"></span>
+                <h4 class="font-serif text-sm font-semibold text-emeraldDeep">Untaian Doa Terkirim</h4>
+              </div>
+              <span id="wish-count" class="text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-ivoryDark text-emeraldDeep border border-goldSoft/30">
+                0 Ucapan
+              </span>
+            </div>
+
+            <div id="wish-list" class="space-y-3 max-h-[340px] overflow-y-auto pr-1 custom-scroll">
+              <!-- Diisi otomatis oleh JavaScript -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- TOMBOL SALIN & BAGIKAN UCAPAN                             -->
+      <!-- ========================================================= -->
+      <section class="px-5 mt-6 reveal">
+        <button id="share-btn" type="button"
+          class="w-full py-3.5 px-5 rounded-2xl bg-gradient-to-r from-goldSoft/20 via-goldLight/30 to-goldSoft/20 border border-goldSoft/60 text-emeraldDeep font-semibold text-xs flex items-center justify-center gap-2.5 hover:bg-goldSoft/25 active:scale-[0.99] transition cursor-pointer shadow-sm">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+          </svg>
+          <span>Salin Teks Ucapan untuk Dibagikan</span>
+        </button>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- FOOTER                                                    -->
+      <!-- ========================================================= -->
+      <footer class="mt-10 px-6 pt-6 pb-8 text-center border-t border-goldSoft/25">
+        <p class="font-script text-2xl text-emeraldDeep">Jasamu Abadi Sepanjang Masa</p>
+        <p class="text-[11px] text-charcoalSoft mt-1">Selamat Hari Guru Nasional • 25 November</p>
+        <div class="w-12 h-[1px] bg-goldSoft/50 mx-auto my-4"></div>
+        <p class="text-[11px] tracking-wider text-emeraldDeep/80 font-medium">
+          developer | ayahnya_aisyah.d.f
+        </p>
+      </footer>
+
+    </main>
+
+    <!-- ========================================================= -->
+    <!-- FLOATING GOLD MUSIC CONTROL (BERSIH UNTUK PUBLIK)         -->
+    <!-- ========================================================= -->
+    <div id="music-control-wrap" class="fixed bottom-5 right-4 sm:right-[calc(50%-200px)] z-40 flex items-center gap-2 opacity-0 pointer-events-none transition-opacity duration-500">
+      <!-- Track Name Pill -->
+      <div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-emeraldDeep/90 text-ivory border border-goldSoft/50 shadow-lg backdrop-blur-md max-w-[165px]">
+        <span id="music-dot" class="w-2 h-2 rounded-full bg-ivory/40 shrink-0"></span>
+        <span id="music-track-name" class="text-[10px] font-medium truncate">Hymne Guru</span>
+      </div>
+
+      <!-- Spinning Gold Disc Play/Pause Button -->
+      <button id="music-toggle-btn" type="button" aria-label="Putar atau jeda musik Hymne Guru"
+        class="relative w-12 h-12 rounded-full bg-gradient-to-br from-goldLight via-goldSoft to-[#9A7632] p-[2px] shadow-[0_8px_22px_rgba(27,59,54,0.45)] active:scale-95 transition cursor-pointer">
+        <div id="music-disc-inner" class="w-full h-full rounded-full bg-emeraldDeep flex items-center justify-center animate-spin-disc paused-disc">
+          <svg id="icon-play" class="w-5 h-5 text-goldLight ml-0.5" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="6 4 20 12 6 20 6 4"/>
+          </svg>
+          <svg id="icon-pause" class="w-5 h-5 text-goldLight hidden" viewBox="0 0 24 24" fill="currentColor">
+            <rect x="6" y="4" width="4" height="16" rx="1"/>
+            <rect x="14" y="4" width="4" height="16" rx="1"/>
+          </svg>
+        </div>
+      </button>
+    </div>
+
+    <!-- ========================================================= -->
+    <!-- CUSTOM MODAL: KONFIRMASI HAPUS UCAPAN (DENGAN PIN 1987)   -->
+    <!-- ========================================================= -->
+    <div id="delete-wish-modal" class="fixed inset-0 z-[70] hidden items-center justify-center bg-black/60 backdrop-blur-sm px-5">
+      <div class="w-full max-w-[340px] rounded-3xl bg-ivory border border-goldSoft/50 p-6 shadow-2xl text-center">
+        <div class="w-12 h-12 rounded-2xl bg-red-50 text-red-600 border border-red-200 flex items-center justify-center mx-auto mb-3">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/>
+          </svg>
+        </div>
+        <h3 class="font-serif text-lg font-semibold text-emeraldDeep">Hapus Ucapan Ini?</h3>
+        <p id="delete-wish-preview" class="text-xs text-charcoalSoft mt-1.5 leading-relaxed">
+          Masukkan PIN admin 4 digit untuk menghapus ucapan ini secara permanen.
+        </p>
+
+        <form id="delete-wish-form" class="mt-4 space-y-3">
+          <input id="delete-pin-input" type="password" inputmode="numeric" maxlength="4" autocomplete="off" placeholder="PIN • • • •"
+            class="w-full text-center tracking-[0.55em] text-base font-semibold py-2.5 px-4 rounded-xl bg-white border border-goldSoft/50 text-emeraldDeep focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-200 transition" />
+          <p id="delete-pin-error" class="hidden text-[11px] text-red-600 text-center font-medium">PIN salah. Ucapan tidak dihapus.</p>
+
+          <div class="grid grid-cols-2 gap-2.5 pt-1">
+            <button id="delete-cancel-btn" type="button"
+              class="py-2.5 rounded-xl border border-goldSoft/50 bg-ivoryDark text-emeraldDeep text-xs font-medium hover:bg-goldSoft/15 transition cursor-pointer">
+              Batal
+            </button>
+            <button id="delete-confirm-btn" type="submit"
+              class="py-2.5 rounded-xl bg-red-600 text-white text-xs font-semibold hover:bg-red-700 transition cursor-pointer shadow-sm">
+              Ya, Hapus
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- ========================================================= -->
+    <!-- TOAST NOTIFICATION (CUSTOM MESSAGE BOX, NO ALERT)         -->
+    <!-- ========================================================= -->
+    <div id="toast-box" class="fixed top-5 left-1/2 -translate-x-1/2 -translate-y-24 opacity-0 z-[60] max-w-[360px] w-[90%] px-4 py-3 rounded-2xl bg-emeraldDeep text-ivory border border-goldSoft/60 shadow-2xl flex items-center gap-3 pointer-events-none">
+      <div class="w-7 h-7 rounded-full bg-goldSoft/20 flex items-center justify-center shrink-0 text-goldLight">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+      </div>
+      <p id="toast-message" class="text-xs leading-snug text-ivory/95 font-medium">Ucapan berhasil dikirim!</p>
+    </div>
+
+  </div>
+
+  <!-- =========================================================== -->
+  <!-- JAVASCRIPT: HTML5 MP3 PLAYER, PARTICLES, CLOUD WISHES       -->
+  <!-- =========================================================== -->
+  <script type="module">
+    /* =========================================================
+     * 1. HTML5 MP3 AUDIO PLAYER DENGAN FADE-IN HALUS
+     * ========================================================= */
+    const bgMusic = document.getElementById('bgMusic');
+    const coverScreen = document.getElementById('cover-screen');
+    const openBtn = document.getElementById('open-invitation-btn');
+    const musicWrap = document.getElementById('music-control-wrap');
+    const musicToggleBtn = document.getElementById('music-toggle-btn');
+    const musicDiscInner = document.getElementById('music-disc-inner');
+    const iconPlay = document.getElementById('icon-play');
+    const iconPause = document.getElementById('icon-pause');
+    const musicDot = document.getElementById('music-dot');
+
+    const ADMIN_PIN = '1987';
+    const LOCAL_STORAGE_KEY = 'hari_guru_wishes_v1';
+    let fadeTimer = null;
+
+    // Lock body scroll while cover is visible
+    document.body.style.overflow = 'hidden';
+
+    // Toast helper
+    const toastBox = document.getElementById('toast-box');
+    const toastMsg = document.getElementById('toast-message');
+    let toastTimeout = null;
+
+    function showToast(msg) {
+      toastMsg.textContent = msg;
+      toastBox.classList.remove('-translate-y-24', 'opacity-0');
+      toastBox.classList.add('translate-y-0', 'opacity-100');
+      if (toastTimeout) clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toastBox.classList.add('-translate-y-24', 'opacity-0');
+        toastBox.classList.remove('translate-y-0', 'opacity-100');
+      }, 3200);
+    }
+
+    function updateMusicUI(playing) {
+      if (playing) {
+        musicDiscInner.classList.remove('paused-disc');
+        iconPlay.classList.add('hidden');
+        iconPause.classList.remove('hidden');
+        if (musicDot) {
+          musicDot.classList.add('animate-pulse', 'bg-goldLight');
+          musicDot.classList.remove('bg-ivory/40');
+        }
+      } else {
+        musicDiscInner.classList.add('paused-disc');
+        iconPlay.classList.remove('hidden');
+        iconPause.classList.add('hidden');
+        if (musicDot) {
+          musicDot.classList.remove('animate-pulse', 'bg-goldLight');
+          musicDot.classList.add('bg-ivory/40');
+        }
+      }
+    }
+
+    function fadeInAudio(targetVolume = 0.85, durationMs = 2200) {
+      if (fadeTimer) clearInterval(fadeTimer);
+      bgMusic.volume = 0.0;
+      const stepInterval = 60;
+      const steps = Math.max(1, Math.floor(durationMs / stepInterval));
+      const volumeStep = targetVolume / steps;
+
+      fadeTimer = setInterval(() => {
+        if (bgMusic.paused) {
+          clearInterval(fadeTimer);
+          fadeTimer = null;
+          return;
+        }
+        const nextVol = Math.min(targetVolume, bgMusic.volume + volumeStep);
+        bgMusic.volume = nextVol;
+        if (nextVol >= targetVolume) {
+          clearInterval(fadeTimer);
+          fadeTimer = null;
+        }
+      }, stepInterval);
+    }
+
+    async function startMusic(useFadeIn = true) {
+      try {
+        bgMusic.volume = useFadeIn ? 0.0 : 0.85;
+        await bgMusic.play();
+        updateMusicUI(true);
+        if (useFadeIn) fadeInAudio(0.85, 2200);
+      } catch (err) {
+        updateMusicUI(false);
+        showToast('Pastikan file hymne-guru.mp3 berada di folder yang sama, lalu ketuk tombol musik.');
+      }
+    }
+
+    /* =========================================================
+     * 2. BUKA UNDANGAN & KONTROL PLAY/PAUSE MUSIK
+     * ========================================================= */
+    openBtn.addEventListener('click', () => {
+      coverScreen.classList.add('opened');
+      document.body.style.overflow = '';
+      musicWrap.classList.remove('opacity-0', 'pointer-events-none');
+      musicWrap.classList.add('opacity-100');
+      startMusic(true);
+      setTimeout(() => {
+        checkReveals();
+      }, 250);
+    });
+
+    musicToggleBtn.addEventListener('click', () => {
+      if (!bgMusic.paused) {
+        if (fadeTimer) {
+          clearInterval(fadeTimer);
+          fadeTimer = null;
+        }
+        bgMusic.pause();
+        updateMusicUI(false);
+      } else {
+        startMusic(false);
+      }
+    });
+
+    bgMusic.addEventListener('play', () => updateMusicUI(true));
+    bgMusic.addEventListener('pause', () => updateMusicUI(false));
+
+    /* =========================================================
+     * 3. SCROLL REVEAL OBSERVER
+     * ========================================================= */
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+
+    function checkReveals() {
+      revealEls.forEach((el) => observer.observe(el));
+    }
+    checkReveals();
+
+    /* =========================================================
+     * 4. FLOATING GOLDEN DUST / PETALS CANVAS
+     * ========================================================= */
+    const canvas = document.getElementById('particles-canvas');
+    const ctx2d = canvas.getContext('2d');
+    let particles = [];
+
+    function resizeCanvas() {
+      const rect = canvas.getBoundingClientRect();
+      canvas.width = rect.width;
+      canvas.height = rect.height;
+    }
+
+    function createParticles() {
+      particles = [];
+      const count = 24;
+      for (let i = 0; i < count; i++) {
+        particles.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          r: Math.random() * 2.4 + 1.0,
+          vx: (Math.random() - 0.5) * 0.25,
+          vy: -(Math.random() * 0.35 + 0.12),
+          alpha: Math.random() * 0.45 + 0.15,
+          phase: Math.random() * Math.PI * 2
+        });
+      }
+    }
+
+    function animateParticles() {
+      ctx2d.clearRect(0, 0, canvas.width, canvas.height);
+      for (let i = 0; i < particles.length; i++) {
+        const p = particles[i];
+        p.phase += 0.015;
+        p.x += p.vx + Math.sin(p.phase) * 0.18;
+        p.y += p.vy;
+
+        if (p.y < -10) {
+          p.y = canvas.height + 10;
+          p.x = Math.random() * canvas.width;
+        }
+        if (p.x < -10) p.x = canvas.width + 10;
+        if (p.x > canvas.width + 10) p.x = -10;
+
+        ctx2d.beginPath();
+        ctx2d.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx2d.fillStyle = `rgba(200, 169, 106, ${p.alpha})`;
+        ctx2d.fill();
+      }
+      requestAnimationFrame(animateParticles);
+    }
+
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+    createParticles();
+    animateParticles();
+
+    /* =========================================================
+     * 5. CLOUD REAL-TIME GUESTBOOK / WISHES & DELETE WITH PIN
+     * ========================================================= */
+    const wishListEl = document.getElementById('wish-list');
+    const wishCountEl = document.getElementById('wish-count');
+    const cloudStatusDot = document.getElementById('cloud-status-dot');
+    const wishForm = document.getElementById('wish-form');
+    const wishSubmitBtn = wishForm.querySelector('button[type="submit"]');
+
+    const deleteModal = document.getElementById('delete-wish-modal');
+    const deleteForm = document.getElementById('delete-wish-form');
+    const deletePreview = document.getElementById('delete-wish-preview');
+    const deletePinInput = document.getElementById('delete-pin-input');
+    const deletePinError = document.getElementById('delete-pin-error');
+    const deleteCancelBtn = document.getElementById('delete-cancel-btn');
+
+    let wishes = [];
+    let pendingDeleteId = null;
+    let db = null;
+    let auth = null;
+    let currentUser = null;
+    let cloudEnabled = false;
+    let firestoreFns = null;
+    const appId = 'hari-guru-sd';
+
+    // Konfigurasi Firebase Project: hariguru-9a091
+    const PUBLIC_FIREBASE_CONFIG = {
+      apiKey: "AIzaSyCHNkpl3EdQBUNf2BCthkboyMUB57XlAYU",
+      authDomain: "hariguru-9a091.firebaseapp.com",
+      projectId: "hariguru-9a091",
+      storageBucket: "hariguru-9a091.firebasestorage.app",
+      messagingSenderId: "939305150736",
+      appId: "1:939305150736:web:aaf93a47acb1a9bd521d95",
+      measurementId: "G-31158FXP6W"
+    };
+
+    function loadLocalWishes() {
+      try {
+        const raw = localStorage.getItem(LOCAL_STORAGE_KEY);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          if (Array.isArray(parsed)) return parsed;
+        }
+      } catch (e) {
+        // Ignore storage error
+      }
+      return [];
+    }
+
+    function saveLocalWishes(list) {
+      try {
+        localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(list));
+      } catch (e) {
+        // Ignore storage error
+      }
+    }
+
+    function escapeHTML(str) {
+      const div = document.createElement('div');
+      div.textContent = str;
+      return div.innerHTML;
+    }
+
+    function renderWishes() {
+      wishCountEl.textContent = `${wishes.length} Ucapan`;
+
+      if (wishes.length === 0) {
+        wishListEl.innerHTML = `
+          <div class="p-6 rounded-2xl bg-ivory border border-dashed border-goldSoft/40 text-center">
+            <p class="text-xs text-charcoalSoft leading-relaxed">
+              Belum ada untaian doa terkirim. Jadilah yang pertama menuliskan ucapan hangat untuk guru tercinta.
+            </p>
+          </div>
+        `;
+        return;
+      }
+
+      wishListEl.innerHTML = wishes
+        .map(
+          (w) => `
+        <article class="p-4 rounded-2xl bg-ivory border border-goldSoft/30 shadow-[0_2px_10px_rgba(27,59,54,0.04)]">
+          <div class="flex items-start justify-between gap-2 mb-1.5">
+            <div>
+              <h6 class="font-semibold text-[13px] text-emeraldDeep leading-tight">${escapeHTML(w.sender)}</h6>
+              <p class="text-[11px] text-goldSoft font-medium mt-0.5">Untuk: ${escapeHTML(w.teacher)}</p>
+            </div>
+            <span class="text-[10px] text-charcoalSoft/70 shrink-0">${escapeHTML(w.time || '')}</span>
+          </div>
+          <p class="text-xs text-charcoalWarm leading-relaxed whitespace-pre-line mt-2">${escapeHTML(w.message)}</p>
+          <div class="mt-3 pt-2 border-t border-goldSoft/20 flex justify-end">
+            <button type="button" data-action="delete" data-id="${escapeHTML(w.id)}"
+              class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[10px] font-medium text-red-600/85 hover:text-red-700 hover:bg-red-50 transition cursor-pointer">
+              <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+              <span>Hapus</span>
+            </button>
+          </div>
+        </article>
+      `
+        )
+        .join('');
+    }
+
+    // Inisialisasi penyimpanan cloud real-time (Autentikasi dahulu sebelum query)
+    async function initCloudStorage() {
+      try {
+        let firebaseConfig = null;
+        if (typeof __firebase_config !== 'undefined' && __firebase_config) {
+          firebaseConfig = JSON.parse(__firebase_config);
+        } else if (PUBLIC_FIREBASE_CONFIG && PUBLIC_FIREBASE_CONFIG.apiKey) {
+          firebaseConfig = PUBLIC_FIREBASE_CONFIG;
+        }
+
+        if (!firebaseConfig) {
+          throw new Error('Konfigurasi cloud belum tersedia.');
+        }
+
+        const [appMod, authMod, fsMod] = await Promise.all([
+          import("https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js"),
+          import("https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js"),
+          import("https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js")
+        ]);
+        firestoreFns = fsMod;
+
+        const app = appMod.initializeApp(firebaseConfig);
+        auth = authMod.getAuth(app);
+        db = fsMod.getFirestore(app);
+
+        let userCred = null;
+        if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
+          userCred = await authMod.signInWithCustomToken(auth, __initial_auth_token);
+        } else {
+          userCred = await authMod.signInAnonymously(auth);
+        }
+
+        currentUser = (userCred && userCred.user) || auth.currentUser;
+        if (!currentUser) {
+          throw new Error('Autentikasi pengguna gagal.');
+        }
+
+        cloudEnabled = true;
+        cloudStatusDot.classList.remove('bg-amber-400');
+        cloudStatusDot.classList.add('bg-emerald-500');
+        cloudStatusDot.title = 'Terhubung ke Firebase Cloud Real-Time';
+
+        const wishesColRef = fsMod.collection(db, 'artifacts', appId, 'public', 'data', 'wishes');
+
+        // Real-time listener (pengurutan dilakukan di JavaScript)
+        fsMod.onSnapshot(
+          wishesColRef,
+          (snapshot) => {
+            const loaded = [];
+            snapshot.forEach((docSnap) => {
+              const data = docSnap.data();
+              loaded.push({
+                id: docSnap.id,
+                sender: data.sender || 'Anonim',
+                teacher: data.teacher || 'Ibu & Bapak Guru',
+                message: data.message || '',
+                time: data.time || '',
+                createdAt: typeof data.createdAt === 'number' ? data.createdAt : 0
+              });
+            });
+            loaded.sort((a, b) => b.createdAt - a.createdAt);
+            wishes = loaded;
+            renderWishes();
+          },
+          (error) => {
+            console.error('Gagal memuat doa real-time:', error);
+            cloudStatusDot.classList.remove('bg-emerald-500');
+            cloudStatusDot.classList.add('bg-amber-400');
+            cloudStatusDot.title = `Error Firestore: ${error.code || error.message}`;
+            showToast('Koneksi cloud terganggu. Periksa Rules atau Authorized Domains.');
+          }
+        );
+      } catch (err) {
+        console.warn('Mode lokal aktif:', err.message);
+        cloudEnabled = false;
+        cloudStatusDot.classList.remove('bg-emerald-500');
+        cloudStatusDot.classList.add('bg-amber-400');
+        cloudStatusDot.title = `Mode lokal aktif (${err.code || err.message})`;
+        wishes = loadLocalWishes();
+        renderWishes();
+      }
+    }
+
+    initCloudStorage();
+
+    // Modal Hapus dengan PIN 1987
+    function openDeleteModal(wish) {
+      pendingDeleteId = wish.id;
+      deletePreview.textContent = `Masukkan PIN admin untuk menghapus ucapan dari "${wish.sender}" untuk "${wish.teacher}".`;
+      deletePinInput.value = '';
+      deletePinError.classList.add('hidden');
+      deleteModal.classList.remove('hidden');
+      deleteModal.classList.add('flex');
+      setTimeout(() => deletePinInput.focus(), 80);
+    }
+
+    function closeDeleteModal() {
+      pendingDeleteId = null;
+      deleteModal.classList.add('hidden');
+      deleteModal.classList.remove('flex');
+    }
+
+    deleteCancelBtn.addEventListener('click', closeDeleteModal);
+    deleteModal.addEventListener('click', (e) => {
+      if (e.target === deleteModal) closeDeleteModal();
+    });
+
+    wishListEl.addEventListener('click', (e) => {
+      const btn = e.target.closest('button[data-action="delete"]');
+      if (!btn) return;
+      const id = btn.dataset.id;
+      const targetWish = wishes.find((item) => item.id === id);
+      if (targetWish) {
+        openDeleteModal(targetWish);
+      }
+    });
+
+    deleteForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (!pendingDeleteId) return;
+
+      if (deletePinInput.value.trim() !== ADMIN_PIN) {
+        deletePinError.classList.remove('hidden');
+        deletePinInput.value = '';
+        deletePinInput.focus();
+        return;
+      }
+
+      const targetId = pendingDeleteId;
+      closeDeleteModal();
+
+      if (cloudEnabled && db && currentUser && firestoreFns) {
+        try {
+          const docRef = firestoreFns.doc(db, 'artifacts', appId, 'public', 'data', 'wishes', targetId);
+          await firestoreFns.deleteDoc(docRef);
+          showToast('Ucapan telah dihapus secara permanen.');
+        } catch (err) {
+          console.error('Gagal menghapus ucapan:', err);
+          showToast('Gagal menghapus ucapan. Silakan coba lagi.');
+        }
+      } else {
+        wishes = wishes.filter((item) => item.id !== targetId);
+        saveLocalWishes(wishes);
+        renderWishes();
+        showToast('Ucapan telah dihapus dari daftar.');
+      }
+    });
+
+    // Kirim Doa & Simpan Permanen ke Cloud (atau localStorage cadangan)
+    wishForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const senderInput = document.getElementById('sender-name');
+      const teacherInput = document.getElementById('teacher-name');
+      const messageInput = document.getElementById('wish-message');
+
+      const sender = senderInput.value.trim();
+      const teacher = teacherInput.value.trim();
+      const message = messageInput.value.trim();
+
+      if (!sender || !teacher || !message) return;
+
+      const now = new Date();
+      const day = String(now.getDate()).padStart(2, '0');
+      const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des'];
+      const month = monthNames[now.getMonth()];
+      const hours = String(now.getHours()).padStart(2, '0');
+      const mins = String(now.getMinutes()).padStart(2, '0');
+      const formattedTime = `${day} ${month} • ${hours}:${mins}`;
+
+      wishSubmitBtn.disabled = true;
+      wishSubmitBtn.classList.add('opacity-70');
+
+      try {
+        if (cloudEnabled && db && currentUser && firestoreFns) {
+          const wishesColRef = firestoreFns.collection(db, 'artifacts', appId, 'public', 'data', 'wishes');
+          await firestoreFns.addDoc(wishesColRef, {
+            sender,
+            teacher,
+            message,
+            time: formattedTime,
+            createdAt: Date.now(),
+            authorId: currentUser.uid
+          });
+          wishForm.reset();
+          showToast('Terima kasih! Doa Anda tersimpan permanen & tampil real-time.');
+        } else {
+          wishes.unshift({
+            id: `wish-${Date.now()}`,
+            sender,
+            teacher,
+            message,
+            time: formattedTime,
+            createdAt: Date.now()
+          });
+          saveLocalWishes(wishes);
+          renderWishes();
+          wishForm.reset();
+          showToast('Terima kasih! Doa & ucapan hangat Anda telah ditambahkan.');
+        }
+      } catch (err) {
+        console.error('Gagal mengirim ucapan:', err);
+        showToast('Maaf, gagal menyimpan doa. Periksa koneksi internet Anda.');
+      } finally {
+        wishSubmitBtn.disabled = false;
+        wishSubmitBtn.classList.remove('opacity-70');
+      }
+    });
+
+    /* =========================================================
+     * 6. SHARE GREETING TO CLIPBOARD
+     * ========================================================= */
+    const shareBtn = document.getElementById('share-btn');
+    shareBtn.addEventListener('click', async () => {
+      const shareText =
+        `✨ Selamat Hari Guru Nasional (25 November) ✨\n\n` +
+        `“Terima kasih telah menjadi pelita di tengah gelap, dan embun penyejuk di saat dahaga ilmu.”\n\n` +
+        `Semoga Ibu & Bapak Guru senantiasa diberikan kesehatan, kebahagiaan, serta keberkahan atas segala ilmu dan ketulusan yang telah diberikan. Jasamu abadi sepanjang masa. 🌿💛`;
+
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(shareText);
+        } else {
+          const tempTextarea = document.createElement('textarea');
+          tempTextarea.value = shareText;
+          tempTextarea.style.position = 'fixed';
+          tempTextarea.style.opacity = '0';
+          document.body.appendChild(tempTextarea);
+          tempTextarea.focus();
+          tempTextarea.select();
+          document.execCommand('copy');
+          document.body.removeChild(tempTextarea);
+        }
+        showToast('Teks ucapan indah berhasil disalin! Siap dibagikan.');
+      } catch (err) {
+        showToast('Maaf, gagal menyalin ucapan. Silakan coba lagi.');
+      }
+    });
+  </script>
+</body>
+</html>
